@@ -5,7 +5,7 @@
 	<artifactId>j4instapaper</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>TemplateJettySpring</name>
+	<name>j4instapaper</name>
 
 	<properties>
 		<jetty.version>8.1.5.v20120716</jetty.version>
@@ -14,6 +14,13 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<!-- fork https://github.com/M-Kurek/insta4j -->
+			<groupId>com.idtmatter</groupId>
+			<artifactId>insta4j-client</artifactId>
+			<version>1.0.2-SNAPSHOT</version>
+		</dependency>
+		<!-- stub -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -47,7 +54,6 @@
         </dependency>
 
 		<!-- utils -->
-		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
@@ -80,7 +86,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>TemplateJettySpring</finalName>
+		<finalName>run4instapaper</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -121,7 +127,6 @@
 						<artifactId>jetty-jsp</artifactId>
 						<version>${jetty.version}</version>
 					</dependency>
-
 				</dependencies>
 			</plugin>
 		</plugins>

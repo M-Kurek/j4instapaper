@@ -24,7 +24,7 @@
 	</appender>
 
 	<appender name="logfile" class="org.apache.log4j.RollingFileAppender">
-		<param name="Threshold" value="INFO" />
+		<param name="Threshold" value="debug" />
 		<param name="File" value="app.log"/>
 		<layout class="org.apache.log4j.PatternLayout">
 			<!-- %l is extremely slow -->

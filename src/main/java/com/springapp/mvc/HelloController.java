@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/d12/hello.htm")
 public class HelloController {
 
 	private static final Logger LOG = LoggerFactory.getLogger(HelloController.class);
